@@ -44,7 +44,9 @@
 				4DDC252B2BE55AD500C55A3C /* c++demo */,
 				4DDC252A2BE55AD500C55A3C /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		4DDC252A2BE55AD500C55A3C /* Products */ = {
 			isa = PBXGroup;
