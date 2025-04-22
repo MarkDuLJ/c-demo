@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4DD887FC2DB54F37004E001D /* sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD887FA2DB54F37004E001D /* sort.cpp */; };
+		4DD888022DB55995004E001D /* pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD888002DB55995004E001D /* pointer.cpp */; };
 		4DDC252D2BE55AD500C55A3C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC252C2BE55AD500C55A3C /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		4DD887FA2DB54F37004E001D /* sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort.cpp; sourceTree = "<group>"; };
 		4DD887FB2DB54F37004E001D /* sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sort.hpp; sourceTree = "<group>"; };
+		4DD888002DB55995004E001D /* pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pointer.cpp; sourceTree = "<group>"; };
+		4DD888012DB55995004E001D /* pointer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pointer.hpp; sourceTree = "<group>"; };
 		4DDC25292BE55AD500C55A3C /* c++demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDC252C2BE55AD500C55A3C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,7 +47,8 @@
 		4D8E9D8D2DB329A400101C6B /* pointer */ = {
 			isa = PBXGroup;
 			children = (
-				4DDC252C2BE55AD500C55A3C /* main.cpp */,
+				4DD888002DB55995004E001D /* pointer.cpp */,
+				4DD888012DB55995004E001D /* pointer.hpp */,
 			);
 			path = pointer;
 			sourceTree = "<group>";
@@ -79,6 +83,7 @@
 		4DDC252B2BE55AD500C55A3C /* c++demo */ = {
 			isa = PBXGroup;
 			children = (
+				4DDC252C2BE55AD500C55A3C /* main.cpp */,
 				4D8E9D8E2DB329E600101C6B /* sort */,
 				4D8E9D8D2DB329A400101C6B /* pointer */,
 			);
@@ -144,6 +149,7 @@
 			files = (
 				4DDC252D2BE55AD500C55A3C /* main.cpp in Sources */,
 				4DD887FC2DB54F37004E001D /* sort.cpp in Sources */,
+				4DD888022DB55995004E001D /* pointer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
