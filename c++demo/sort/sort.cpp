@@ -124,7 +124,7 @@ void mergeSort(int A[], int left, int right){
     //use a defined merge func to merge sorted halves
     merge(A,left, mid, right);
   }
-  printf("Final result:");
+  printf("After merge result:");
   printArr(A, 8);
   printf("\n");
 }

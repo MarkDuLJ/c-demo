@@ -4,6 +4,7 @@
 
 
 #include "sort/sort.hpp"
+#include "linked_list/linked_list.hpp"
 
 int main(){
   printf("hello\n");
@@ -15,11 +16,59 @@ int main(){
 
   bubbleSort(a, 8);
   insertSort(a, 8);
-   */
   
   mergeSort(a, 0, 7);//right has to be the last index, not length
+   */
   
+  /**
+   C++ style
+  Node* A;
+//  A = nullptr;
+  Node * temp = (Node*)(malloc(sizeof(Node)));
+  (*temp).data = 2;
+  (*temp).next = nullptr;
+  A = temp;
+  while (A != nullptr){
+    printf("%d\n", (*A).data);
+           A = (*A).next;
+  }
+   free(A);
   
+  //c++ style
+  Node* node = new Node{1,nullptr};
+  node->next = new Node{2,nullptr};
+  node->next->next = new Node{3,nullptr};
+  
+  //insert node at the begining
+  node = insertAtBegin(node, 10);
+  node = insertAtBegin(node, 11);
+  printReverse(node);
+  printf("\n");
+  
+//insert at position n
+  
+  node = insertAtN(node, 3, 12);
+  traverse(node);
+// delete at position n
+  node = deleteAtN(node, 1);
+  traverse(node);
+  
+  //reverse linked list
+  node = reverse(node);
+  traverse(node);
+   */
+  
+  DNode* double_list = new DNode{nullptr, 1, nullptr};
+  
+  double_list->next = new DNode{double_list, 2, nullptr};
+  double_list->next->next = new DNode{double_list->next, 3, nullptr};
+
+  double_list = insertDAtBegin(double_list, 10);
+  double_list = insertDAtTail(double_list, 4);
+  while (double_list != nullptr) {
+    printf("%d ", double_list->data);
+    double_list= double_list->next;
+  }
   /**
    creat a guess gamble game
   printf("We'll start a game, guess queen in 3 cards, you have $%d when starts\n", cash);
