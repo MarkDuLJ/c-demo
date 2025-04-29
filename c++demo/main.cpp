@@ -5,11 +5,25 @@
 
 #include "sort/sort.hpp"
 #include "linked_list/linked_list.hpp"
+#include "stack/stack.hpp"
 
 int main(){
   printf("hello\n");
-  int a[] = {8,7,6,5,4,3,2,1};
+  MyStack arrStack;
+  arrStack.push(1);
+  arrStack.push(2);
+  arrStack.push(3);
+  
+  int last = arrStack.peek();
+  printf("stack has %d elements inside, last one is %d\n", arrStack.size(), last);
+  
+  arrStack.pop();
+  last = arrStack.peek();
+  
+  printf("After pop, stack has %d elements inside, last one is %d\n", arrStack.size(), last);
+  
   /**
+  int a[] = {8,7,6,5,4,3,2,1};
    sort demo
 
   selectSort(a, 8); // selection sort
@@ -58,6 +72,8 @@ int main(){
   traverse(node);
    */
   
+  /**
+   double linked list
   DNode* double_list = new DNode{nullptr, 1, nullptr};
   
   double_list->next = new DNode{double_list, 2, nullptr};
@@ -69,6 +85,9 @@ int main(){
     printf("%d ", double_list->data);
     double_list= double_list->next;
   }
+   */
+  
+  
   /**
    creat a guess gamble game
   printf("We'll start a game, guess queen in 3 cards, you have $%d when starts\n", cash);

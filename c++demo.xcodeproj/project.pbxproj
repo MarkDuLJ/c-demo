@@ -11,6 +11,7 @@
 		4DD888022DB55995004E001D /* pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD888002DB55995004E001D /* pointer.cpp */; };
 		4DD888062DB817CD004E001D /* linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD888042DB817CD004E001D /* linked_list.cpp */; };
 		4DDC252D2BE55AD500C55A3C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC252C2BE55AD500C55A3C /* main.cpp */; };
+		4DF1DA3C2DBBE3D40004DAB7 /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1DA3A2DBBE3D40004DAB7 /* stack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4DD888052DB817CD004E001D /* linked_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = linked_list.hpp; sourceTree = "<group>"; };
 		4DDC25292BE55AD500C55A3C /* c++demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDC252C2BE55AD500C55A3C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4DF1DA3A2DBBE3D40004DAB7 /* stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack.cpp; sourceTree = "<group>"; };
+		4DF1DA3B2DBBE3D40004DAB7 /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +98,22 @@
 		4DDC252B2BE55AD500C55A3C /* c++demo */ = {
 			isa = PBXGroup;
 			children = (
+				4DF1DA392DBBE3BB0004DAB7 /* stack */,
 				4DD888032DB817AB004E001D /* linked_list */,
 				4DDC252C2BE55AD500C55A3C /* main.cpp */,
 				4D8E9D8E2DB329E600101C6B /* sort */,
 				4D8E9D8D2DB329A400101C6B /* pointer */,
 			);
 			path = "c++demo";
+			sourceTree = "<group>";
+		};
+		4DF1DA392DBBE3BB0004DAB7 /* stack */ = {
+			isa = PBXGroup;
+			children = (
+				4DF1DA3A2DBBE3D40004DAB7 /* stack.cpp */,
+				4DF1DA3B2DBBE3D40004DAB7 /* stack.hpp */,
+			);
+			path = stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +176,7 @@
 				4DDC252D2BE55AD500C55A3C /* main.cpp in Sources */,
 				4DD887FC2DB54F37004E001D /* sort.cpp in Sources */,
 				4DD888062DB817CD004E001D /* linked_list.cpp in Sources */,
+				4DF1DA3C2DBBE3D40004DAB7 /* stack.cpp in Sources */,
 				4DD888022DB55995004E001D /* pointer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
