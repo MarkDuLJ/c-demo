@@ -1,14 +1,49 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <iostream>
 
 
 #include "sort/sort.hpp"
 #include "linked_list/linked_list.hpp"
 #include "stack/stack.hpp"
+#include "dfs/dfs_cases.hpp"
+
+using namespace std;
 
 int main(){
   printf("hello\n");
+  
+  /**
+   Basic dfs: find components
+  
+  MyDFS g(17);
+  g.addEdge(0, 4);
+  g.addEdge(0, 8);
+  g.addEdge(0, 13);
+  g.addEdge(0, 14);
+  g.addEdge(1, 5);
+  g.addEdge(2, 9);
+  g.addEdge(2, 15);
+  g.addEdge(3, 9);
+  g.addEdge(4, 8);
+  g.addEdge(5, 16);
+  g.addEdge(5, 17);
+  g.addEdge(6, 7);
+  g.addEdge(6, 11);
+  g.addEdge(7, 11);
+  g.addEdge(8, 14);
+  g.addEdge(9, 15);
+  g.addEdge(10, 15);
+  g.addEdge(13, 14);
+  
+//  g.printAdjList();
+  cout << g.countComponents()<< endl;
+  
+   */
+  
+  /**
+   
   MyStack arrStack;
   arrStack.push(1);
   arrStack.push(2);
@@ -21,6 +56,7 @@ int main(){
   last = arrStack.peek();
   
   printf("After pop, stack has %d elements inside, last one is %d\n", arrStack.size(), last);
+   */
   
   /**
   int a[] = {8,7,6,5,4,3,2,1};
