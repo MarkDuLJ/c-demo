@@ -8,11 +8,34 @@
 #include "linked_list/linked_list.hpp"
 #include "stack/stack.hpp"
 #include "dfs/dfs_cases.hpp"
+#include "bfs/bfs_cases.hpp"
 
 using namespace std;
 
 int main(){
   printf("hello\n");
+  
+  /**
+   DungeonSolver
+  
+  std::vector<std::vector<char>> dungeon = {
+         {'S', '.', '.', '#'},
+         {'.', '#', '.', '.'},
+         {'.', '#', '.', '.'},
+         {'.', '#', '.', 'E'}
+     };
+  
+  DungeonSolver solver(dungeon);
+  
+  int steps = solver.bfs();
+  
+  if (steps != -1) {
+    cout << "there has " << steps << " steps\n";
+  }else{
+    cout << "no path found\n";
+  }
+   
+   */
   
   /**
    Basic dfs: find components

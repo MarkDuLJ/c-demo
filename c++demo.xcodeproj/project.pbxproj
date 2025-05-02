@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D388D5D2DC28C110060F603 /* dfs_cases.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D388D5B2DC28C110060F603 /* dfs_cases.cpp */; };
+		4D388D612DC3EEF70060F603 /* bfs_cases.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D388D5F2DC3EEF70060F603 /* bfs_cases.cpp */; };
+		4D388D652DC54A7A0060F603 /* topological_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D388D632DC54A7A0060F603 /* topological_sort.cpp */; };
 		4DD887FC2DB54F37004E001D /* sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD887FA2DB54F37004E001D /* sort.cpp */; };
 		4DD888022DB55995004E001D /* pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD888002DB55995004E001D /* pointer.cpp */; };
 		4DD888062DB817CD004E001D /* linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DD888042DB817CD004E001D /* linked_list.cpp */; };
@@ -30,6 +32,10 @@
 /* Begin PBXFileReference section */
 		4D388D5B2DC28C110060F603 /* dfs_cases.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs_cases.cpp; sourceTree = "<group>"; };
 		4D388D5C2DC28C110060F603 /* dfs_cases.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dfs_cases.hpp; sourceTree = "<group>"; };
+		4D388D5F2DC3EEF70060F603 /* bfs_cases.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bfs_cases.cpp; sourceTree = "<group>"; };
+		4D388D602DC3EEF70060F603 /* bfs_cases.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bfs_cases.hpp; sourceTree = "<group>"; };
+		4D388D632DC54A7A0060F603 /* topological_sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = topological_sort.cpp; sourceTree = "<group>"; };
+		4D388D642DC54A7A0060F603 /* topological_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = topological_sort.hpp; sourceTree = "<group>"; };
 		4DD887FA2DB54F37004E001D /* sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort.cpp; sourceTree = "<group>"; };
 		4DD887FB2DB54F37004E001D /* sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sort.hpp; sourceTree = "<group>"; };
 		4DD888002DB55995004E001D /* pointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pointer.cpp; sourceTree = "<group>"; };
@@ -60,6 +66,24 @@
 				4D388D5C2DC28C110060F603 /* dfs_cases.hpp */,
 			);
 			path = dfs;
+			sourceTree = "<group>";
+		};
+		4D388D5E2DC3EEE00060F603 /* bfs */ = {
+			isa = PBXGroup;
+			children = (
+				4D388D5F2DC3EEF70060F603 /* bfs_cases.cpp */,
+				4D388D602DC3EEF70060F603 /* bfs_cases.hpp */,
+			);
+			path = bfs;
+			sourceTree = "<group>";
+		};
+		4D388D622DC54A540060F603 /* topo_sort */ = {
+			isa = PBXGroup;
+			children = (
+				4D388D632DC54A7A0060F603 /* topological_sort.cpp */,
+				4D388D642DC54A7A0060F603 /* topological_sort.hpp */,
+			);
+			path = topo_sort;
 			sourceTree = "<group>";
 		};
 		4D8E9D8D2DB329A400101C6B /* pointer */ = {
@@ -110,6 +134,8 @@
 		4DDC252B2BE55AD500C55A3C /* c++demo */ = {
 			isa = PBXGroup;
 			children = (
+				4D388D622DC54A540060F603 /* topo_sort */,
+				4D388D5E2DC3EEE00060F603 /* bfs */,
 				4D388D5A2DC28BE60060F603 /* dfs */,
 				4DF1DA392DBBE3BB0004DAB7 /* stack */,
 				4DD888032DB817AB004E001D /* linked_list */,
@@ -187,9 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDC252D2BE55AD500C55A3C /* main.cpp in Sources */,
+				4D388D652DC54A7A0060F603 /* topological_sort.cpp in Sources */,
 				4D388D5D2DC28C110060F603 /* dfs_cases.cpp in Sources */,
 				4DD887FC2DB54F37004E001D /* sort.cpp in Sources */,
 				4DD888062DB817CD004E001D /* linked_list.cpp in Sources */,
+				4D388D612DC3EEF70060F603 /* bfs_cases.cpp in Sources */,
 				4DF1DA3C2DBBE3D40004DAB7 /* stack.cpp in Sources */,
 				4DD888022DB55995004E001D /* pointer.cpp in Sources */,
 			);
